@@ -78,8 +78,11 @@ const communityLinks = computed(() => {
       </div>
     </div>
 
-    <ClientOnly v-if="showRailAd">
-      <InspiraCarbonAds class="mt-6 w-full max-w-full overflow-hidden [&_.carbon-text]:text-xs" />
+    <ClientOnly>
+      <InspiraCarbonAds
+        v-if="showRailAd"
+        class="mt-6 w-full max-w-full overflow-hidden [&_.carbon-text]:text-xs"
+      />
     </ClientOnly>
   </div>
 </template>
